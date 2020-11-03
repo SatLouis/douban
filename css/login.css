@@ -1,0 +1,437 @@
+@charset "utf-8";
+@import "./reset.css";
+@import "./common.css";
+@import "http://at.alicdn.com/t/font_1795939_uwg3rqlwxfm.css";
+a{
+	color: #41ac52;
+}
+body{
+	line-height: 1.618;
+}
+
+.login{
+	position: relative;
+	font-size: 13px;
+	line-height: 2;
+	color: #9b9b9b;
+	/*border: 1px solid;*/
+	margin: auto;
+	width: 300px;
+	max-width: 300px;
+	height: 296px;
+	min-height: 200px;
+	padding: 30px 10px 10px;
+	box-sizing: border-box;
+}
+
+/*头部区域*/
+.login .item:first-child{
+	width: 280px;
+	height: 27px;
+	/*font-size: 0;*/
+	border-bottom: 1px solid #ececec;
+	text-align: center;
+	box-sizing: border-box;
+	position: relative;
+}
+.login .item input[type="text"]{
+	cursor: pointer;
+	font-size: 13px;
+	color: #9b9b9b;
+	text-align: center;
+	border-radius: 0;
+}
+.login .item:first-child input[type="text"]{
+	box-sizing: border-box;
+	width: 140px;
+	padding: 5px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+
+}
+.login .item:first-child input[type="text"]:last-child{
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid #494949;
+	margin-bottom: -1px;
+}
+.login .item:first-child input[type="text"]::placeholder{
+	color: #333;
+	font-weight: bold;	
+}
+.login .item:first-child input[type="text"]:first-child::placeholder{
+	color: inherit;
+	font-weight: normal;	
+}
+.login .item:first-child input[type="text"]:first-child:focus{
+	border-bottom: 1px solid #494949;
+	margin-bottom: -1px;
+}
+.login .item:first-child input[type="text"]:first-child:focus::placeholder{
+	color: #333;
+	font-weight: bold;	
+}
+.login .item:first-child input[type="text"]:first-child:focus + input[type="text"]{
+	border-bottom: none;
+	margin-bottom: 0px;	
+}
+.login .item:first-child input[type="text"]:first-child:focus + input[type="text"]::placeholder{
+	color: inherit;
+	font-weight: normal;	
+}
+
+/*注册登录区*/
+.login .main input,
+.login .main button{
+	border: 1px solid #e4e6e5;
+	width: 280px;
+	font-size: 13px;
+	box-sizing: border-box;
+	border-radius: 3px;
+	padding-top: 8px;
+    padding-bottom: 8px;
+    box-shadow: none;
+    background: #fff;
+}
+.login .main .pas_login,
+.login .main .reg_login{
+	width: 100%;
+	display: none;
+}
+.login .main .pas_login.select,
+.login .main .reg_login.select{
+	display: block;
+}
+.login .main .pas_login>div,
+.login .main .reg_login>div{
+	margin: 10px 0;
+	position: relative;
+}
+.login .main .pas_login div:first-child,
+.login .main .reg_login div:first-child{
+	font-size: 12px;
+}
+.login .main .pas_login div:nth-child(2) input{
+	padding-left: 61px; 
+	padding-right: 40px;
+}
+.login .main .pas_login div:nth-child(2) div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+	font-weight: bold;
+	line-height: 36px;
+	cursor: pointer;
+	font-size: 15px;
+	color: #333;
+    margin: 0;
+    text-align: center;
+}
+.login .main .pas_login div:nth-child(2) div::after{
+	content: "";
+	position: absolute;
+	top: 6px;
+	left: 0;
+	width: 50px;
+	height: 22px;
+	border-right: 1px solid;
+    border-color: rgba(0,0,0,.12);	
+}
+.login .main .pas_login div:nth-child(3) input,
+.login .main .reg_login div:nth-child(3) input{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.login .main .pas_login div:nth-child(3) div,
+.login .main .reg_login div:nth-child(3) div{
+    position: absolute;
+    box-sizing: border-box;
+    line-height: 35px;
+    padding: 0 10px;
+    right: 0;
+    top: 0;
+}
+.login .main .pas_login div:nth-child(4) button,
+.login .main .reg_login div:nth-child(4) button{
+	width: 280px;
+	background-color: rgba(66,189,86,.5);
+	color: #fff;
+	font-size: 15px;
+	height: 34px;
+	line-height: 34px;
+	padding: 0;
+	font-weight: 400;
+	cursor: default;
+}
+.login .main .pas_login div:nth-child(4) button.btn_active,
+.login .main .reg_login div:nth-child(4) button.btn_active{
+	background-color: #41ac52;	
+	cursor: pointer;
+}
+.login .main .pas_login div:nth-child(5),
+.login .main .reg_login div:nth-child(5){
+	margin-bottom: 5px;
+	color: #333;
+}
+.login .main .pas_login div:nth-child(5) label input,
+.login .main .reg_login div:nth-child(5) label input{
+	width: initial;
+	height: initial;
+	vertical-align: middle;
+}
+.login .main .pas_login div:nth-child(5) a,
+.login .main .reg_login div:nth-child(5) a{
+	text-align: right;
+}
+/*密码登录区*/
+.login .main .reg_login div:first-child{
+	text-align: right;
+}
+.login .main .reg_login div:nth-child(2) input{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+/*尾部区域*/
+.login .footer{
+	width: 250px;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.login .footer span{
+	vertical-align: 10px;
+    color: #9b9b9b;
+    font-size: 11px;
+    text-align: center;
+}
+.login .footer a{
+	width: 22px;
+	height: 0;
+	display: inline-block;
+	overflow: hidden;
+	padding-top: 22px;
+	background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 100% 100%;
+    margin-top: 10px;
+    margin-left: 12px;
+}
+.login .footer a.weixin{
+	background-image: url(../img/weixin.svg);
+}
+.login .footer a.xlwb{
+	background-image: url(../img/xlwb.svg);
+}
+
+/*国际区号*/
+.country_list{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 22;
+	background-color: rgba(255,255,255,.7);
+}
+.country_list.select{
+	display: block;
+}
+.country_list .container{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 74px;
+	margin: auto;
+	width: 340px;
+	height: 434px;
+	background-color: #fff;
+	border: 1px solid #bbb;
+	box-sizing: border-box;
+	border-radius: 4px;
+	/*overflow: hidden;*/
+}
+.country_list .container .hd{
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px 10px 6px;
+    background: #ebf5eb;
+    border-radius: 4px 4px 0 0;
+}
+.country_list .container .hd h3{
+	padding: 0 40px 0 4px;
+    background: none;
+    color: #060;
+    font-size: initial;
+    font-weight: bold;
+}
+.country_list .container .hd a{
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    padding: 0 3px;
+    z-index: 1;
+    font: 11px/1.2 "Comic Sans MS", sans-serif;
+}
+.country_list .container .hd a:hover{
+	color: #fab0b6;
+    background: none;
+}
+.country_list .content{
+	box-sizing: border-box;
+	height: 390px;
+	padding: 15px;
+	overflow: auto;
+}
+.country_list .content ul li{
+	box-sizing: border-box;
+	overflow: hidden;
+    line-height: 2.6;
+    color: #494949;
+    cursor: pointer;
+    border-bottom: 1px solid #e5e5e5;
+    /*font-size: 0;*/
+    font-size: 14px;
+}
+.country_list .content ul li .left{
+	font-weight: bold;
+}
+.country_list .content ul li .right{
+	color: #aaa;
+}
+.country_list .content ul li:first-child {
+    border-top: 1px solid #e5e5e5;
+ }	
+ .country_list .content ul li.active>*{
+    color: #42bd56;
+ }
+ .country_list .content ul li.active .left::after{
+ 	content: "\2714\FE0E";
+ 	display: inline-block;
+    margin-left: 10px;
+ }
+ /*二维码切换*/
+.login .qr_code{
+	position: absolute;
+    top: 10px;
+    right: 10px;
+   /* height: 30px;
+    width: 30px;*/
+    width: 280px;
+    box-sizing: border-box;
+    background-size: 30px;
+    z-index: 10;	
+}
+.login .qr_code a{
+	display: none;
+	position: absolute;
+    top: 0;
+    right: 0;
+    height: 30px;
+    width: 30px;
+    background-size: 30px;
+    z-index: 29;
+    opacity: .8;
+}
+.login .qr_code a:nth-child(1).select,
+.login .qr_code a:nth-child(2).select{
+	display: block;
+}
+.login .qr_code a:first-child{
+	background: url(../img/qr_code1.png) no-repeat 0/100%;
+	z-index: 30;
+}
+.login .qr_code a:nth-child(2):hover::before,
+.login .qr_code a:nth-child(1):hover::before{
+    content: "\626B\7801\767B\5F55";
+    width: 53px;
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid rgba(66,189,86,.3);
+    border-radius: 3px;
+    padding: 3px 5px;
+    color: #666;
+    font-size: 13px;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    background: #f5faf9;
+    z-index: 25;
+}
+.login .qr_code a:nth-child(2):hover::after,
+.login .qr_code a:nth-child(1):hover::after{
+    content: "";
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-top: 1px solid rgba(66,189,86,.3);
+    border-right: 1px solid rgba(66,189,86,.3);
+    background: #f5faf9;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 44px;
+    top: 8px;
+    z-index: 25;
+}
+.login .qr_code a:nth-child(2){
+	background: url(../img/qr_code2.png) no-repeat 0/100%;
+	z-index: 29;
+}
+.login .qr_code a:nth-child(2):hover::before{
+    content: "\77ED\4FE1\767B\5F55/\6CE8\518C";
+    width: 86px;
+}
+.login .qr_code .code_area{
+	display: none;
+	margin-top: 20px;
+	width: 283px;
+	background-color: #fff;
+	z-index: 15;
+}
+.login .qr_code .code_area.select{
+	display: block;
+}
+.login .qr_code .code_area .code_item{
+	width: 100%;
+	font-size: 13px;
+	text-align: center;
+}
+.login .qr_code .code_area .code_item:nth-child(1){
+	border-bottom: 1px solid #ececec;
+}
+.login .qr_code .code_area .code_item:nth-child(1) h2{
+	width: 140px;
+	color: #333;
+    font-weight: 600;
+    text-align: left;
+    line-height: 2;
+    cursor: pointer;
+}
+.login .qr_code .code_area .code_item:nth-child(2){
+	margin-top: 20px;
+	font-size: 0;
+}
+.login .qr_code .code_area .code_item:nth-child(2) img{
+	width: 170px;
+	height: 170px;
+}
+.login .qr_code .code_area .code_item:nth-child(3){
+	margin-top: 10px;
+	padding-bottom: 12px;
+}
+.login .qr_code .code_area .code_item:nth-child(3) span{
+	display: inline-block;
+	border-radius: 12px;
+    padding: 3px 20px;
+    color: #494949;
+    background-color: rgba(0,0,0,.08);
+    background-image: none;
+    line-height: 1.5;
+}
